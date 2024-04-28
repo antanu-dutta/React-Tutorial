@@ -1,19 +1,18 @@
-import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import FoodItems from "./components/FoodItems";
+import ErrorMessage from "./components/ErrorMessage";
 
 function App() {
+  let foodItem = ["Sabji", "Green Vegetable", "Roti", "Salad", "Milk", "Ghee"];
   return (
-    <React.Fragment>
-      <h1 style={{ textAlign: "center" }}>Healthy Food</h1>
-      <ul class="list-group">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-        <li class="list-group-item">A fourth item</li>
-        <li class="list-group-item">And a fifth one</li>
-      </ul>
-    </React.Fragment>
+    <>
+      <h1 style={{ textAlign: "center" }} className="food-heading">
+        Healthy Food
+      </h1>
+      <ErrorMessage items={foodItem} />
+      <FoodItems items={foodItem}></FoodItems>
+    </>
   );
 }
 
