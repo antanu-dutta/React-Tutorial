@@ -1,0 +1,10 @@
+#display{
+  width: 100%;
+  font-size: 25px;
+  border-radius: 5px;
+  text-align: right;
+  padding: 10px;
+  outline: none;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
