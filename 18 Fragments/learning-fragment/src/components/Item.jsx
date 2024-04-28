@@ -1,10 +1,5 @@
 import styles from "./Item.module.css";
-const Item = ({ foodItem }) => {
-  const handleBuyClicked = (event) => {
-    console.log(event);
-    console.log(`${foodItem} is being bought`);
-  };
-
+const Item = ({ foodItem, handleBuyClicked }) => {
   return (
     <>
       <li className={`list-group-item ${styles["kg-item"]}`}>

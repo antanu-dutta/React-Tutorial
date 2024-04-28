@@ -6,12 +6,15 @@ import Container from "./components/Container";
 import FoodInput from "./components/FoodInput";
 function App() {
   let foodItem = ["Sabji", "Green Vegetable", "Roti", "Salad", "Milk", "Ghee"];
+  const handleOnChangeClicked = (event) => {
+    console.log(event.target.value);
+  };
   return (
     <>
       <Container>
         <h1 className="food-heading">Healthy Food</h1>
         <ErrorMessage items={foodItem} />
-        <FoodInput></FoodInput>
+        <FoodInput handleOnChangeClicked={handleOnChangeClicked}></FoodInput>
         <FoodItems items={foodItem}></FoodItems>
       </Container>
     </>
