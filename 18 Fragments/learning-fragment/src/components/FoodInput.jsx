@@ -1,5 +1,5 @@
 import styles from "./FoodInput.module.css";
-const FoodInput = ({ handleOnChangeClicked }) => {
+const FoodInput = ({ handleKeyDown }) => {
   return (
     <>
       <div
@@ -12,7 +12,7 @@ const FoodInput = ({ handleOnChangeClicked }) => {
           placeholder="Enter food item here"
           aria-label="Username"
           aria-describedby="addon-wrapping"
-          onChange={handleOnChangeClicked}
+          onKeyDown={handleKeyDown}
         />
       </div>
     </>

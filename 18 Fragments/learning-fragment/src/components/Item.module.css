@@ -1,8 +1,10 @@
 .kg-item{
-  /* background-color: khaki !important; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.bg-color{
+  background-color: rgb(164, 207, 164) !important;
 }
 .kg-span{
   font-weight: 500;
