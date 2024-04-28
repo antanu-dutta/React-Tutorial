@@ -1,7 +1,13 @@
 .kg-item{
-  background-color: khaki !important;
+  /* background-color: khaki !important; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .kg-span{
   font-weight: 500;
   color: orangered;
 }
+/* .button{
+
+} */

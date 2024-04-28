@@ -1,4 +1,7 @@
+
 .food-heading{
-  background-color: silver;
+  /* background-color: silver; */
+  text-align: center;
   color: brown;
+  border-radius: 5px;
 }
