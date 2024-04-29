@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+#calculator{
+  border: 1px solid rgba(92, 92, 92, 0.679);
+  border-radius: 5px;
+  width: 200px;
+  padding: 10px;
+}
+
