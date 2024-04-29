@@ -1,4 +1,5 @@
 import styles from "./KgButtons.module.css";
+import { MdDelete } from "react-icons/md";
 function TodoItem({ todoName, todoDate, handleDeleteItem }) {
   return (
     <div className="container">
@@ -11,7 +12,7 @@ function TodoItem({ todoName, todoDate, handleDeleteItem }) {
             type="button"
             className={`btn btn-danger ${styles["kg-button"]}`}
           >
-            Delete
+            <MdDelete />
           </button>
         </div>
       </div>
