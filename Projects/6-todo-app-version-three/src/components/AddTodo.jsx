@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { IoIosAddCircle } from "react-icons/io";
 import styles1 from "./AddTodo.module.css";
 import styles2 from "./KgButtons.module.css";
 function AddTodo({ onNewItem }) {
-  const [todoName, setTodoName] = useState();
-  const [todoDate, setTodoDate] = useState();
+  const [todoName, setTodoName] = useState("");
+  const [todoDate, setTodoDate] = useState("");
   const handleNameChange = (event) => {
     setTodoName(event.target.value);
     // event.target.value = "";
@@ -37,7 +38,7 @@ function AddTodo({ onNewItem }) {
             className={`btn btn-success ${styles2["kg-button"]}`}
             onClick={handleAddButtonCliked}
           >
-            Add
+            <IoIosAddCircle />
           </button>
         </div>
       </div>

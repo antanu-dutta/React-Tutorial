@@ -16,6 +16,7 @@ function App() {
   };
   return (
     <>
+      <h1 style={{ marginBottom: "15px" }}>Welcome To Calculator</h1>
       <div id={styles.calculator}>
         <Display currValue={currValue} />
         <ButtonContainer handleButton={handleButton} />
