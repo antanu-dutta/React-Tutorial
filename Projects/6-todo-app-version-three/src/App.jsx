@@ -7,7 +7,6 @@ import "./App.css";
 function App() {
   const [todoItems, setTodoItems] = useState([]);
   const handleNewItem = (itemName, itemDueDate) => {
-    // const newTodoItems = []
     setTodoItems([...todoItems, { name: itemName, dueDate: itemDueDate }]);
   };
   const handleDeleteItem = (toodItem) => {
